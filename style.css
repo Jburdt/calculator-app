@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg')
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
 }
 
 .container {
@@ -43,6 +43,30 @@ button {
 
 button:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+  background-color: rgba(186, 186, 186, 0.4);
+}
+
+.clear:hover {
+  background-color: rgba(241, 115, 119, 0.4);
+}
+
+.equal-sign {
+  height: 100%;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+  background-color: rgba(78, 159, 212, 0.4);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 
