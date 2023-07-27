@@ -3,7 +3,7 @@ const calculator = {
   displayValue: "0",
   firstOperand: null,
   waitingForSecondOperand: false,
-  operator: null
+  operator: null,
 };
 
 // Update Display
@@ -110,11 +110,8 @@ const calculate = (firstOperand, secondOperand, operator) => {
 
 // Reset calculator
 const resetCalculator = () => {
-  calculator.displayValue= "0",
-  calculator.firstOperand= null,
-  calculator.waitingForSecondOperand= false,
-  calculator.operator= null
+  (calculator.displayValue = "0"),
+    (calculator.firstOperand = null),
+    (calculator.waitingForSecondOperand = false),
+    (calculator.operator = null);
 };
-
-
-
