@@ -23,7 +23,7 @@ keys.addEventListener("click", (e) => {
   }
 
   if (target.classList.contains("operator")) {
-    handleOperatror(target.value);
+    handleOperator(target.value);
     updateDisplay();
     return;
   }
@@ -72,7 +72,7 @@ const inputDecimal = (dot) => {
 };
 
 // Handle Operators
-const handleOperatror = (nextOperator) => {
+const handleOperator = (nextOperator) => {
   const { firstOperand, displayValue, operator } = calculator;
   const inputValue = parseFloat(displayValue);
 
@@ -98,13 +98,20 @@ const handleOperatror = (nextOperator) => {
 const calculate = (firstOperand, secondOperand, operator) => {
   if (operator === "+") {
     return firstOperand + secondOperand;
-  } else if (operator === "-") {
+  }
+
+  if (operator === "-") {
     return firstOperand - secondOperand;
-  } else if (operator === "*") {
+  }
+
+  if (operator === "*") {
     return firstOperand * secondOperand;
-  } else if (operator === "/") {
+  }
+
+  if (operator === "/") {
     return firstOperand / secondOperand;
   }
+
   return secondOperand;
 };
 
